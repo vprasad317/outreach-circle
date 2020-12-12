@@ -6,7 +6,7 @@ import { Injectable } from '@angular/core';
 export class ApiUrlsService {
 
   getRecipeUrl: string;
-  apiBaseUrl = "http://www.recipepuppy.com";
+  apiBaseUrl = "https://www.recipepuppy.com";
 
   constructor() {
     this.getRecipes();
