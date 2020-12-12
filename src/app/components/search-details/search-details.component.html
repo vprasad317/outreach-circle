@@ -1,0 +1,13 @@
+<app-header></app-header>
+<app-loader *ngIf="isLoading"></app-loader>
+<div class="container" *ngIf="!isLoading && !noData">
+    <h4 *ngIf="recipeData && recipeData.length">{{recipeData.length}} matching results for "{{queryParams.recipe}}"</h4>
+    <div class="row">
+        <div class="col-sm-4 mb-4" *ngFor="let data of recipeData">
+            <mat-card>
+                <img src={{data.thumbnail}} />
+            </mat-card>
+
+        </div>
+    </div>
+</div>

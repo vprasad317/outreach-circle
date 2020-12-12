@@ -1,0 +1,13 @@
+.search-holder {
+    min-height: 70vh;
+}
+.data-holder {
+    position: absolute;
+    top: 0px;
+}
+.img-holder {
+    background-image: url('../../../assets/images/bg-img.jpg');
+    filter: blur(5px);
+    height: 100%;
+    background-size: cover;
+}
