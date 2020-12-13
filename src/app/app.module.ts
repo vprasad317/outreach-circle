@@ -12,6 +12,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { LoaderComponent } from './components/loader/loader.component';
+import { NoDataComponent } from './components/no-data/no-data.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { LoaderComponent } from './components/loader/loader.component';
     SearchDetailsComponent,
     HeaderComponent,
     FooterComponent,
-    LoaderComponent
+    LoaderComponent,
+    NoDataComponent
   ],
   imports: [
     BrowserModule,

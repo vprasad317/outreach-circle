@@ -21,7 +21,7 @@ export class SearchDetailsComponent implements OnInit {
     this.isLoading = true;
     const params = this.getQueryParams();
     this.service.getRecipeData(params).subscribe(data => {
-      if (data && Object.keys(data) && Object.keys(data).length) {
+      if (data && Object.keys(data) && Object.keys(data).length && data.results.length) {
         this.isLoading = false;
         this.isError = false;
         this.noData = false;
