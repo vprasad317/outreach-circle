@@ -26,7 +26,7 @@
                     </mat-form-field>
                 </div>
                 <div class="col-sm-4 mt-0 mt-sm-3">
-                <button mat-raised-button class="w-50 cursor-pointer" mat-button color="primary"
+                <button [disabled]="recipeCtrl.value == '' || recipeCtrl.hasError('required')" mat-raised-button class="w-50 cursor-pointer" mat-button color="primary"
                     (click)="getRecipe()">Search</button>
                     </div>
             </div>
