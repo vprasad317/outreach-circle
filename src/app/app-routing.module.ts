@@ -15,6 +15,10 @@ const routes: Routes = [{
 {
   path: 'search-details',
   component: SearchDetailsComponent
+},
+{
+  path: '**',
+  component: SearchComponent
 }];
 
 @NgModule({
